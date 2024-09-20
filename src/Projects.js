@@ -5,12 +5,12 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio website built with React, showcasing my work and skills.',
-    githubLink: 'https://github.com/your-username/portfolio'
+    githubLink: 'https://github.com/hemanthyaka/myportfolio.git'
   },
   {
     title: 'Food Website',
     description: 'It is just a user interface website with HTML, CSS and BOOTSTRAP.',
-    githubLink: 'https://github.com/your-username/ecommerce-app'
+    githubLink: ' https://hemanthyaka.github.io/Foodie/'
   }
 ];
 
