@@ -1,0 +1,76 @@
+/* Navbar styling */
+.navbar {
+    background-color: #ffffff61;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+    color: #000000;
+  }
+  
+  .navbar-brand:hover {
+    color: #007bff;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .navbar-nav .nav-item .nav-link.active {
+    color: #ffffff;
+    background-color: #36417f;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #000000;
+
+}
+  
+  /* For smaller screens */
+  .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-toggler-icon {
+    background-color: transparent;
+  }
+  
+  /* Fixed Navbar Effect */
+  .navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar.fixed-top.scrolled {
+    background-color: #fff;
+    box-shadow: 0 4px 8px #0000001a;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+  

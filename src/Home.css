@@ -1,0 +1,221 @@
+/* Container and Layout */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1f264f;
+    position: relative;
+    padding: 0 20px;
+    overflow: hidden;
+    background-image: url("https://wallpaperaccess.com/full/5651978.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  /* Intro Text Styling */
+  .intro-text {
+    max-width: 600px;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  .home-h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #c9c5c5;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-in-out;
+    text-shadow: 1px 1px 2px #ffffff;
+
+  }
+  
+  .home-h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 20px;
+    width: 530px;
+    animation: fadeInUp 1.2s ease-in-out;
+    position: relative;
+    text-shadow: 2px 2px 2px #ffffff;
+    overflow: hidden;
+  }
+  .home-h1::after {
+    content: "";
+    position: absolute;
+    left: 90px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1E254D;
+    animation: move 4s steps(12) infinite;
+    -webkit-animation: move 4s steps(12) infinite;
+}
+@keyframes move {
+  from {
+    left: 90px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+  
+  .home-p {
+    font-size: 1.2rem;
+    color: #cfcdcd;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.4s ease-in-out;
+  }
+  
+  .home-btn {
+    font-size: 1.1rem;
+    width: 170px;
+    padding: 10px 10px;
+    background-color: #007bff;
+    box-shadow: 0px 0px 10px #007bff ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    animation: fadeInUp 1.6s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .home-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transition: 0.5s all ease-in;
+    transform: scaleZ(1.1) scaleY(1.2);
+    -webkit-transform: scaleZ(1.1) scaleY(1.2);
+    -moz-transform: scaleZ(1.1) scaleY(1.2);
+    -ms-transform: scaleZ(1.1) scaleY(1.2);
+    -o-transform: scaleZ(1.1) scaleY(1.2);
+    -webkit-transition: 0.5s all ease-in;
+    -moz-transition: 0.5s all ease-in;
+    -ms-transition: 0.5s all ease-in;
+    -o-transition: 0.5s all ease-in;
+}
+  
+  /* Intro Image Styling */
+  .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    z-index: 1;
+  }
+  
+  .my-image {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro-text {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .home-h1, .home-h2 {
+      font-size: 2rem;
+    }
+
+    .intro-image {
+      display: block;
+    }
+  
+    .my-image {
+      width: 300px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      margin-bottom: 30px;
+}
+@keyframes move {
+from {
+  left: 55px;
+}
+to {
+  left: 55%;
+}
+}
+
+  }
+
+  @media (min-width:769px) and (max-width:992px){
+    .container {
+      flex-direction: row;
+    }
+  
+    .intro-text {
+      max-width: 100%;
+      margin-bottom: 40px;
+      position: absolute;
+      left: 30px;
+    }
+  .home-h2 {
+    position: relative;
+    left: -20px;
+  }
+    .home-h1, .home-h2 {
+      font-size: 2rem;
+    }
+  
+    .intro-image {
+      display: block;
+    }
+  
+    .my-image {
+      width: 320px;
+      position: absolute;
+      right: 40px;
+      top: 120px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
