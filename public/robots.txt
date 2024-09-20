@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /private-page
+Allow: /
+
+Sitemap: https://your-portfolio-url.com/sitemap.xml
