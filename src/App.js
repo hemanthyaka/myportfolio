@@ -10,6 +10,7 @@ import Footer from './Footer';
 import './App.css';
 import Skills from './Skills';
 import TextToSpeech from './Speak'
+// import ChatBot from './Chatbot';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Skills/>
       <Projects />
       <TextToSpeech/>
+      {/* <ChatBot/> */}
       <Contact />
       <Footer />
     </div>
