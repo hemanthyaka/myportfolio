@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id="contact-section" className="contact-section">
       <div className="container-fluid  contact">
-        <h2>Contact Me</h2>
+        <h2 className='text-uppercase'>Contact Me</h2>
         <p>
           I’m always open to connecting! Feel free to reach out via email or follow me on my social media channels.
         </p>

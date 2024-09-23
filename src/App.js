@@ -9,6 +9,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import './App.css';
 import Skills from './Skills';
+import TextToSpeech from './Speak'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <About />
       <Skills/>
       <Projects />
+      <TextToSpeech/>
       <Contact />
       <Footer />
     </div>
